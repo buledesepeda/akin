@@ -1,0 +1,61 @@
+*{
+    font-size: 1rem;
+}
+.main-container
+{
+    width: 99%;
+    margin: auto;
+}
+
+
+@media (min-width:901){
+.main-container
+{
+    width: 99%;
+    margin: auto;
+}
+}
+@media (min-width:601px) and (max-width:800px){
+    *{
+        font-size: 1rem;
+    }
+
+    .btn{
+        font-size: 1rem;
+    }
+
+    .action{
+        width:auto;
+    }
+}
+@media (min-width:401px) and (max-width:600px){
+    *{
+        font-size: 1rem;
+    }
+    .main-container
+{
+    width: 99%;
+    margin: auto;
+}
+    .btn{
+        font-size: .90rem;
+    }
+
+    .action{
+        width:auto;
+    }
+}
+@media (min-width:320px) and (max-width:400px){
+    *{
+        font-size: .95rem;
+    }
+    .btn{
+        font-size: .80rem;
+    }
+    #edit-btn,#delete-btn{
+        width: 50px;
+    }
+    .action{
+        width:auto;
+    }
+}
