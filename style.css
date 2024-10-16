@@ -4,8 +4,27 @@
     list-style: none;
     color:aliceblue
 }
+.main-container .box1{
+    margin-bottom: 70px;
+}
+input{
+    color: black;
+}
+    .subtitle-div{
+        float: left;
+        margin-left: 30px;
 
-
+    }
+    #subtitle{
+        color: black;
+        margin-left: auto;
+        font-size: 1.65rem;
+    }
+    .search-div{
+        float: inline-end;
+        margin-top: 8px;
+        
+    }
 #menu-btn{
     display: none;
 }
@@ -27,6 +46,11 @@ ul li a{
 .menu-btn1:hover{
     cursor: pointer;
 }
+img{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
 @media (min-width:901px){
 .main-container
 {
@@ -36,7 +60,7 @@ ul li a{
     nav{
         background-color: darkgreen;
         width: 200px;
-        height: 900px;
+        height: 100%;
         position: fixed;
     }
     .main-container{
@@ -49,6 +73,7 @@ ul li a{
     .menu-btn{
         margin-left: 40px;
     }
+    
 }
 @media (min-width:801px) and (max-width:900px){
     *{
@@ -104,6 +129,10 @@ ul li a{
         font-size: 1rem;
     }
 
+    .search-div{
+        float: inline-end;
+        
+    }
         nav{
         background-color: darkgreen;
         width: 30%;
@@ -140,7 +169,31 @@ ul li a{
     #menu-btn:checked ~ nav{
         margin-left: 0px;
     }
-   
+   .main-container .box1{
+    margin-bottom: 80px;
+}
+input{
+    color: black;
+}
+
+.main-container .box1{
+    margin-bottom: 65px;
+}
+    .subtitle-div{
+        float: left;
+        margin-left: 10px;
+
+    }
+    #subtitle{
+        color: black;
+        margin-left: auto;
+        font-size: 1.5rem;
+    }
+    .search-div{
+        float: inline-end;
+        margin-top: 0px;
+        
+    }
 .btn{
         font-size: 1rem;
     }
@@ -171,7 +224,7 @@ ul li a{
     .header{
         width: 100%;
     background-color: darkgreen;
-    padding: 0;
+    padding: 10px 0 10px 0px;
 }
     #menu-btn{
         width: 40%;
@@ -193,7 +246,24 @@ ul li a{
     .btn{
         font-size: .90rem;
     }
+.main-container .box1{
+    margin-bottom: 60px;
+}
+    .subtitle-div{
+        float: left;
+        margin-left: 10px;
 
+    }
+    #subtitle{
+        color: black;
+        margin-left: auto;
+        font-size: 1.3rem;
+    }
+    .search-div{
+        float: inline-end;
+        margin-top: 0px;
+        
+    }
     .action{
         width:auto;
     }
@@ -201,6 +271,9 @@ ul li a{
 @media (min-width:320px) and (max-width:400px){
     *{
         font-size: .93rem;
+    }
+    .header{
+    padding: 10px 0 10px 0px;
     }
     nav{
         background-color: darkgreen;
@@ -236,6 +309,24 @@ ul li a{
     }
     #edit-btn,#delete-btn{
         width: 50px;
+    }
+    .main-container .box1{
+    margin-bottom: 60px;
+}
+    .subtitle-div{
+        float: left;
+        margin-left: 10px;
+
+    }
+    #subtitle{
+        color: black;
+        margin-left: auto;
+        font-size: 1.1rem;
+    }
+    .search-div{
+        float: inline-end;
+        margin-top: 0px;
+        
     }
     .action{
         width:auto;
