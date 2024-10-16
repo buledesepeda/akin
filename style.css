@@ -1,26 +1,136 @@
 *{
     font-size: 1rem;
+    text-decoration: none;
+    list-style: none;
+    color:aliceblue
 }
+
+
+#menu-btn{
+    display: none;
+}
+
+.header{
+        width: 100%;
+    background-color: darkgreen;
+    padding: 15px 15px 15px 0px;
+}
+ul li a{
+    display: block;
+    padding: 1px;
+    color: aliceblue;
+    text-decoration: none;
+}
+@media (min-width:901px){
+.main-container
+{
+    width:75%;
+    margin: auto;
+}
+    nav{
+        background-color: darkgreen;
+        width: 200px;
+        height: 900px;
+        position: fixed;
+    }
+    .main-container{
+        margin-left: 210px;
+        display: absolute;
+    }
+        table{
+        margin:2% 0 0 1%;
+    }
+}
+@media (min-width:801px) and (max-width:900px){
+    *{
+        font-size: 1rem;
+    }
+        nav{
+        background-color: darkgreen;
+        width: 30%;
+        height: 250px;
+        position: fixed;
+        margin-left: -100%;
+    }
+            table{
+        margin:2% 0 0 1%;
+    }
 .main-container
 {
     width: 99%;
     margin: auto;
 }
+    #menu-btn{
+        width: 40%;
+        display: none;
+    }
+    .menu-btn{
+        width: 20%;
+        position: fixed;
+    }
+    .menu-btn1{
+        margin-left: 15px;
+    }
+    .menu-btn1:hover{
+        cursor: pointer;
+    }
+    .menu-btn:hover{
+        cursor: pointer;
+    }
+    #menu-btn:checked ~ nav{
+        margin-left: 0px;
+    }
+     
+.btn{
+        font-size: 1rem;
+    }
 
-
-@media (min-width:901){
-.main-container
-{
-    width: 99%;
-    margin: auto;
-}
+    .action{
+        width:auto;
+    }
 }
 @media (min-width:601px) and (max-width:800px){
     *{
         font-size: 1rem;
     }
 
-    .btn{
+        nav{
+        background-color: darkgreen;
+        width: 30%;
+        height: 250px;
+        position: fixed;
+        margin-left: -100%;
+    }
+            table{
+        margin:2% 0 0 0;
+    }
+.main-container
+{
+    width: 99%;
+    margin: auto;
+}
+    #menu-btn{
+        width: 40%;
+        display: none;
+    }
+    .menu-btn{
+        width: 20%;
+        position: fixed;
+    }
+    .menu-btn1{
+        margin-left: 15px;
+    }
+    .menu-btn1:hover{
+        cursor: pointer;
+    }
+    .menu-btn:hover{
+        cursor: pointer;
+    }
+    #menu-btn:checked ~ nav{
+        margin-left: 0px;
+    }
+   
+.btn{
         font-size: 1rem;
     }
 
@@ -30,13 +140,50 @@
 }
 @media (min-width:401px) and (max-width:600px){
     *{
-        font-size: 1rem;
+        font-size: .98rem;
     }
-    .main-container
-{
-    width: 99%;
-    margin: auto;
+
+    nav{
+        background-color: darkgreen;
+        width: 40%;
+        height: 250px;
+        position: fixed;
+        margin-left: -100%;
+    }
+    table{
+        margin:2% 0 0 0;
+    }
+    .main-container{
+        margin:auto;
+        width: auto;
+    }
+    .header{
+        width: 100%;
+    background-color: darkgreen;
+    padding: 0;
 }
+    #menu-btn{
+        width: 40%;
+        display: none;
+    }
+    .menu-btn{
+        width: 20%;
+        position: fixed;
+        margin-left: 1%;
+    }
+    .menu-btn1{
+        margin-left: 20px;
+    }
+    .menu-btn1:hover{
+        cursor: pointer;
+    }
+    .menu-btn:hover{
+        cursor: pointer;
+    }
+    #menu-btn:checked ~ nav{
+        margin-left: 0px;
+    }
+
     .btn{
         font-size: .90rem;
     }
@@ -47,7 +194,42 @@
 }
 @media (min-width:320px) and (max-width:400px){
     *{
-        font-size: .95rem;
+        font-size: .93rem;
+    }
+    nav{
+        background-color: darkgreen;
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        margin-left: -100%;
+    }
+            table{
+        margin:1% 0 0 0;
+    }
+    .main-container{
+        margin:auto;
+    }
+    #menu-btn{
+        width: 40%;
+        display: none;
+    }
+    .menu-btn{
+        width: 20%;
+        position: fixed;
+        margin-left: 1%;
+    }
+    .menu-btn1{
+        margin-left: 20px;
+    }
+    .menu-btn1:hover{
+        cursor: pointer;
+    }
+    .menu-btn:hover{
+        cursor: pointer;
+    }
+
+    #menu-btn:checked ~ nav{
+        margin-left: 0px;
     }
     .btn{
         font-size: .80rem;
