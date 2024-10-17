@@ -63,7 +63,7 @@ include 'header.php';
                         <td id="action-div">
                             <div class="action">
                                 <a href="" class="btn btn-success" id="edit-btn">Edit</a>
-                                <a href="" class="btn btn-danger" id="delete-btn">X</a>
+                                <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger" id="delete-btn">X</a>
                             </div>
                         </td>
                     </tr>
