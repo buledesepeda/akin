@@ -73,6 +73,32 @@ img{
     .menu-btn{
         margin-left: 40px;
     }
+    #image-div{
+        width: 70px;
+    }
+    img{
+        width: 85px;
+        height: 85px;
+    }
+    .action{
+        width:auto;
+    }
+    #action-div{
+        width:110px;
+    }
+    #edit-btn,#delete-btn{
+        margin-top: 1.9%;
+    }
+    #name_div{
+        max-width: 100px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+    #contact_div{
+        max-width: 20px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
     
 }
 @media (min-width:801px) and (max-width:900px){
@@ -93,6 +119,9 @@ img{
 {
     width: 99%;
     margin: auto;
+}
+table{
+    margin: 1% auto auto auto;
 }
     #menu-btn{
         width: 40%;
@@ -119,9 +148,31 @@ img{
 .btn{
         font-size: 1rem;
     }
-
+    #image-div{
+        width: 70px;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
     .action{
         width:auto;
+    }
+    #action-div{
+        width:110px;
+    }
+    #edit-btn,#delete-btn{
+        margin-top: 1.9%;
+    }
+    #name_div{
+        max-width: 100px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+    #contact_div{
+        max-width: 80px;
+        overflow: hidden;
+        word-wrap: break-word;
     }
 }
 @media (min-width:601px) and (max-width:800px){
@@ -198,13 +249,36 @@ input{
         font-size: 1rem;
     }
 
+    #image-div{
+        width: 70px;
+    }
+    img{
+        width: 70px;
+        height: 70px;
+    }
     .action{
         width:auto;
+    }
+    #action-div{
+        width:110px;
+    }
+    #edit-btn,#delete-btn{
+        margin-top: 1.9%;
+    }
+    #name_div{
+        max-width: 100px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+    #contact_div{
+        max-width: 20px;
+        overflow: hidden;
+        word-wrap: break-word;
     }
 }
 @media (min-width:401px) and (max-width:600px){
     *{
-        font-size: .98rem;
+        font-size: .937rem;
     }
 
     nav{
@@ -264,13 +338,37 @@ input{
         margin-top: 0px;
         
     }
+    #image-div{
+        width: 70px;
+    }
+    img{
+        width: 70px;
+        height: 70px;
+    }
     .action{
-        width:auto;
+        width:50px;
+    }
+    #action-div{
+        width:95px;
+    }
+    #edit-btn,#delete-btn{
+        margin-top: 1.9%;
+        width: 70px;
+    }
+    #name_div{
+        max-width: 100px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+    #contact_div{
+        max-width: 20px;
+        overflow: hidden;
+        word-wrap: break-word;
     }
 }
 @media (min-width:320px) and (max-width:400px){
     *{
-        font-size: .93rem;
+        font-size: .85rem;
     }
     .header{
     padding: 10px 0 10px 0px;
@@ -328,7 +426,28 @@ input{
         margin-top: 0px;
         
     }
-    .action{
-        width:auto;
+    #image-div{
+        width: 50px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    #action-div{
+        width:60px;
+    }
+    #edit-btn,#delete-btn{
+        margin-top: 1.9%;
+        width: 50px;
+    }
+    #name_div{
+        max-width: 100px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+    #contact_div{
+        max-width: 20px;
+        overflow: hidden;
+        word-wrap: break-word;
     }
 }

@@ -15,20 +15,19 @@ include 'header.php';
         </div>
     </div>
     <hr style="color: darkgreen;margin-left:auto; width:98.5%">
-       <?php
-       if(isset($_GET['err_msg'])){
+    <?php
+    if (isset($_GET['err_msg'])) {
         echo '<div class="msg" style="width: 100%;background-color:green;padding:8px;">';
-        echo '<h4>'. $_GET['err_msg'].'</h4>';
+        echo '<h4>' . $_GET['err_msg'] . '</h4>';
         echo '</div>';
-
-       }
-       if(isset($_GET['msg'])){
+    }
+    if (isset($_GET['msg'])) {
         echo  '<div class="msg" style="width: 100%;background-color:green;padding:8px;">';
-        echo '<h4>'. $_GET['msg'].'</h4>';
+        echo '<h4>' . $_GET['msg'] . '</h4>';
         echo '</div>';
-       }
-       
-       ?>
+    }
+
+    ?>
     <table class="table table-striped table-hovered table-bordered">
         <thead>
             <tr>
@@ -42,34 +41,36 @@ include 'header.php';
                 </th>
             </tr>
         </thead>
-        
+
         <tbody>
             <?php
-            $query="SELECT * FROM profile";
-            $result=mysqli_query($conn,$query);
+            $query = "SELECT * FROM profile";
+            $result = mysqli_query($conn, $query);
 
-            if(!$result){
+            if (!$result) {
                 die("Query failed");
-            }
-            else{
-                while($row=mysqli_fetch_assoc($result)){
-            
-            ?>
-            <tr>
-                <td><img src="sample/<?php echo $row['image']?>"></td>
-                <td><?php echo $row['name']?></td>
-                <td><?php echo $row['contact']?></td>
+            } else {
+                while ($row = mysqli_fetch_assoc($result)) {
 
-                <td>
-                    <div class="action">
-                        <a href="" class="btn btn-success" id="edit-btn">Edit</a>
-                        <a href="" class="btn btn-danger" id="delete-btn">X</a>
-                    </div>
-                </td>
-            </tr>
+            ?>
+                    <tr>
+                        <td id="image-div">
+                            <img src="sample/<?php echo $row['image'] ?>">
+                        </td>
+                        <td id="name_div"><?php echo $row['name'] ?></td>
+                        <td id="contact_div"><?php echo $row['contact'] ?></td>
+
+                        <td id="action-div">
+                            <div class="action">
+                                <a href="" class="btn btn-success" id="edit-btn">Edit</a>
+                                <a href="" class="btn btn-danger" id="delete-btn">X</a>
+                            </div>
+                        </td>
+                    </tr>
             <?php
-                }}
-                ?>
+                }
+            }
+            ?>
         </tbody>
     </table>
 </div>
@@ -102,4 +103,4 @@ include 'header.php';
     </div>
 </form>
 
-<?php include 'footer.php';?>
+<?php include 'footer.php'; ?>
