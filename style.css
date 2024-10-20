@@ -4,6 +4,15 @@
     list-style: none;
     color:aliceblue
 }
+tbody tr td #pen{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-bottom: 2%;
+
+}
+
 .main-container .box1{
     margin-bottom: 70px;
 }
@@ -50,7 +59,20 @@ img{
     width: 70px;
     height: 70px;
     margin: auto;
+    border: .01px solid black;
 }
+   #sample-subtitle-div .sample-img{
+        color: black;
+        font-size: 1.5rem;
+    }
+        #main-container{
+        width:98%;
+        max-width: 500px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 1% auto auto auto;
+    }
 @media (min-width:901px){
 .main-container
 {
@@ -77,8 +99,8 @@ img{
         width: 70px;
     }
     img{
-        width: 85px;
-        height: 85px;
+        width: 95px;
+        height: 95px;
     }
     .action{
         width:auto;
@@ -99,7 +121,12 @@ img{
         overflow: hidden;
         word-wrap: break-word;
     }
-    
+    #menu-btn:not(checked) ~ nav{
+        margin-left: 0px;
+    }   
+    #menu-btn:checked ~ nav{
+        margin-left: -100%;
+    }   
 }
 @media (min-width:801px) and (max-width:900px){
     *{
@@ -365,6 +392,7 @@ input{
         overflow: hidden;
         word-wrap: break-word;
     }
+
 }
 @media (min-width:320px) and (max-width:400px){
     *{
@@ -403,7 +431,7 @@ input{
         margin-left: 0px;
     }
     .btn{
-        font-size: .80rem;
+        font-size: .75rem;
     }
     #edit-btn,#delete-btn{
         width: 50px;
@@ -428,6 +456,7 @@ input{
     }
     #image-div{
         width: 50px;
+        padding: 2px;
     }
     img{
         width: 50px;
@@ -449,5 +478,8 @@ input{
         max-width: 20px;
         overflow: hidden;
         word-wrap: break-word;
+    }
+    #pen{
+        font-size: larger;
     }
 }

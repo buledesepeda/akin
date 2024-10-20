@@ -55,6 +55,7 @@ include 'header.php';
             ?>
                     <tr>
                         <td id="image-div">
+                                <a href="update_image.php?id=<?php echo $row['id'] ?>" class="fa-solid fa-pen-to-square" id="pen"></a>
                             <img src="sample/<?php echo $row['image'] ?>">
                         </td>
                         <td id="name_div"><?php echo $row['name'] ?></td>
@@ -62,8 +63,8 @@ include 'header.php';
 
                         <td id="action-div">
                             <div class="action">
-                                <a href="" class="btn btn-success" id="edit-btn">Edit</a>
-                                <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger" id="delete-btn">X</a>
+                                <a href="update.php?id=<?php echo $row['id'] ?>" class="btn btn-success" id="edit-btn">Edit</a>
+                                <a href="delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger" id="delete-btn">X</a>
                             </div>
                         </td>
                     </tr>
