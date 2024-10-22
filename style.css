@@ -2,7 +2,9 @@
     font-size: 1rem;
     text-decoration: none;
     list-style: none;
-    color:aliceblue
+    color:aliceblue;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 tbody tr td #pen{
     text-decoration: none;
@@ -72,6 +74,25 @@ img{
         border-radius: 5px;
         padding: 5px;
         margin: 1% auto auto auto;
+    }
+    #search-bar{
+       padding: 5px;
+       display: block;
+    }
+    #search-bar{
+        float: left;
+        font-size: .90rem;
+
+    }
+    #search-btn{
+        border-radius: 0 5px 5px 0;
+        float: right;
+        font-size: .90rem;
+    }
+
+    #view_result:hover{
+        background-color: black;
+        color: red;
     }
 @media (min-width:901px){
 .main-container
@@ -481,5 +502,11 @@ input{
     }
     #pen{
         font-size: larger;
+    }
+    .search-div #search-bar{
+        font-size: .78rem;
+    }
+    .search-div #search-btn{
+        font-size: .85rem;
     }
 }
