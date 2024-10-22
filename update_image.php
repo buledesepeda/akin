@@ -36,6 +36,9 @@ if (isset($_POST['update_image'])) {
 }
 
 ?>
+<br>
+<br>
+<br>
 <form action="" method="post" enctype="multipart/form-data">
     <div class="main-container" id="main-container">
         <hr id="hr1">
